@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card {
+        width: 450px;
+        height: 560px;
+        background-color: rgb(165, 159, 159);
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .card img {
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        display: inline-block;
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        font-size: 1.1em;
+        bottom: 190px;
+        left: 70px;
+      }
+
+      .music {
+        position: absolute;
+        top: 360px;
+        margin-left: 75px;
+      }
+
+      h3 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 140px;
+        margin-top: 60px;
+      }
+
+      b {
+        display: inline-block;
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 145px;
+      }
+
+      a {
+        display: inline-block;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: 350px;
+        margin-top: 70px;
+      }
+
+      .pay {
+        display: grid;
+        background: transparent;
+        color: black;
+        position: absolute;
+        margin-top: 62px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        padding: 15px 211px;
+        perspective: 30rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+      }
+
+      .pay::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
+        z-index: 1;
+        transition: background 3s;
+      }
+
+      .cancel {
+        display: inline-block;
+        position: relative;
+        margin-top: 111px;
+        background: transparent;
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        padding: 5px 190px;
+        perspective: 30rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+      }
+
+      .cancel::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="images/illustration-hero.svg"
+        alt=""
+      />
+      <h1>Order Summary</h1>
+      <p>You can no listen to milion of song audio,books, and podcasts on any device anywhere you like</p>
+      <img
+        src="images/icon-music.svg"
+        alt=""
+        class="music"
+      />
+      <h3>Annual Plan</h3>
+      <b>$59.99/year</b>
+      <a href="#">change</a>
+      <button class="pay">Pay</button>
+      <button class="cancel">Cancel Order</button>
+    </div>
+  </body>
+</html>
